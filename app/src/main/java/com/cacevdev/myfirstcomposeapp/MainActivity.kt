@@ -11,8 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.cacevdev.myfirstcomposeapp.components.layout.MyColumn
-import com.cacevdev.myfirstcomposeapp.components.layout.MyRow
+import com.cacevdev.myfirstcomposeapp.components.layout.MyComplexLayout
 import com.cacevdev.myfirstcomposeapp.ui.theme.MyFirstComposeAppTheme
 
 class MainActivity : ComponentActivity() {
@@ -22,7 +21,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             MyFirstComposeAppTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    MyRow(modifier = Modifier.padding(innerPadding))
+                    MyComplexLayout(modifier = Modifier.padding(innerPadding))
                 }
             }
         }
